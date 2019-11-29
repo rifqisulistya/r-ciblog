@@ -13,6 +13,12 @@
     <textarea id="editor1" class="form-control" name="body" placeholder="Add Body"></textarea>
   </div>
   <div class="form-group">
+  	<label>
+  		Upload Image
+  	</label><br>
+  	<input type="file" name="userfile" size="20">
+  </div>
+  <div class="form-group">
   	<label>Category</label>
   	<select name="category_id" class="form-control">
   		<?php foreach($categories as $category): ?>
@@ -20,11 +26,5 @@
   				<?php echo $category['name']; ?>
   			</option>
   		<?php endforeach; ?>
-  </div>
-  <div class="form-group">
-  	<label>
-  		Upload Image
-  	</label>
-  	<input type="file" name="postimage" size="20">
   </div>
 </form>
