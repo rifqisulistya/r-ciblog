@@ -6,7 +6,7 @@
   <button type="submit" class="btn btn-primary" style="float: right">Submit</button><br>
   <div class="form-group">
     <label>Title</label>
-    <input type="text" class="form-control" name="title"placeholder="Add title">
+    <input type="text" class="form-control" name="title" placeholder="Add title">
   </div>
   <div class="form-group">
     <label>Body</label>
@@ -26,5 +26,6 @@
   				<?php echo $category['name']; ?>
   			</option>
   		<?php endforeach; ?>
+  	</select>
   </div>
 </form>
